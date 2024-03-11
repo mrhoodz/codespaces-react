@@ -5,11 +5,10 @@ export default component$(() => {
   return (
     <>
       <h1>Welcome to KathuKonnect 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
+      <img
+        src="/Final Social media post-100.jpg"
+        alt="kathu konnect social media ad"
+      />
     </>
   );
 });
@@ -20,6 +19,10 @@ export const head: DocumentHead = {
     {
       name: "description",
       content: "Qwik site description",
+    },
+    {
+      property: "og:image",
+      content: "https://kathukonnect.com/Final-Social-media-post-100.jpg",
     },
   ],
 };
